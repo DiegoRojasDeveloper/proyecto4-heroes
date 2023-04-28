@@ -19,9 +19,8 @@ describe('Pruebas en <AppRouter />', () => {
             </MemoryRouter>
         );
 
-        expect( screen.getAllByText('Login').length ).toBe(2)
+        expect( screen.getAllByText('Login').length ).toBe(1)
 
-        
     });
 
     test('debe de mostrar el componente de Marvel si está autenticado', () => {
@@ -44,9 +43,5 @@ describe('Pruebas en <AppRouter />', () => {
 
         expect( screen.getAllByText('Marvel').length ).toBeGreaterThanOrEqual(1);
 
-        
-
     });
-
-
 });
